@@ -169,7 +169,13 @@ body {
   width: 31vw;
 }
 
-
+.ricky{
+  position: absolute;
+  bottom: 15vh;
+  width: 25vw;
+  left:2vw;
+  z-index: -1;
+}
 
 .peter{
   animation-name: example;

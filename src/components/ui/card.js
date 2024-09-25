@@ -1,7 +1,10 @@
 import Image from "next/image";
 
-const Card=({img,deg,height,lang,kyss,title,shrtdes})=> {
-  console.log(kyss)
+const Card=({img,deg,height,lang,kyss,title,shrtdes,des,tit})=> {
+ if(des){
+  console.log(des)
+  des("hola")
+  tit("good")}
   return(
     <div className="pcard" onClick={kyss} style={{transform:'rotate('+deg+')',bottom:height}}>
     <div className="dards"  >
@@ -21,7 +24,7 @@ const Card=({img,deg,height,lang,kyss,title,shrtdes})=> {
           
           
         />
-      <div className="tit">Table</div>
+      <div className="tit">{title}</div>
       
       <div className="des">This is a very good table. Infact the best ,trust me this is the best table you will ever find.{"\n"}
       </div>

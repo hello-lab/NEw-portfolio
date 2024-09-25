@@ -78,7 +78,7 @@ const Card=({img,tit,desc,git,link,x})=> {
     <div className="phone"
     onMouseDown={handleMouseDown}
     style={{cursor: isDragging ? 'grabbing' : 'grab'}}>
-    <div><Link href={git}>
+    <div><Link href={git}  target="_blank" >
 <div className="git" >
 
 <Image
@@ -91,7 +91,7 @@ width={35}
 </div>
       </Link>
 
-<Link href={link}>
+<Link  target="_blank"  href={link}>
 <div className="link">
 <Image
 src={hyper}
