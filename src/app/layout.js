@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -21,10 +23,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
+      
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      ><Suspense fallback={<Loading />}>
+        
+        </Suspense>
         {children}
       </body>
     </html>
+    
   );
 }
