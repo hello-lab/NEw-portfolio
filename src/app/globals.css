@@ -13,28 +13,29 @@
     --foreground: #ededed;
   }
 }
-html{
+html {
   overflow-y: clip;
+  overflow-x: hidden;
 }
-.peter{
-  
-  height: 41.3vh;
-  width: auto;
+.peter {
+  z-index: 1;
+  width: 34.5dvw;
   top: 23dvh;
-  position: fixed;
-  right:25vw
+  position: absolute;
+  left: 40vw;
 }
-.tit{
+.tit {
   font-size: large;
-  font-weight:bold;
+  font-weight: bold;
   padding-top: 2vh;
   color: rgb(170, 170, 170);
 }
-.des{
-  white-space:    'pre-line';
+.des {
+  white-space: "pre-line";
   font-size: 0.5dvw;
+  filter: blur(1.2);
 }
-.crdimg{
+.crdimg {
   width: auto;
   height: auto;
   position: relative;
@@ -43,38 +44,33 @@ html{
   border-radius: 0.2vw;
   padding: 2px;
 }
-.pcard{
+.pcard {
   position: absolute;
   width: 20vw;
   height: 28vw;
   bottom: 8vh;
   left: 35vw;
+  z-index: 3;
+}
+.chips {
+  position: absolute;
   z-index: 1;
-  
-}
-.chips{
-  position: fixed;
-  
-  right: 5vw;
+  left: 55vw;
   bottom: 5vh;
-  
- 
 }
-.chip{
+.chip {
   width: 30dvw;
 }
-.language{
-width: 1vw;
-position: fixed;
-top: 0.5vh;
-z-index: 1;
+.language {
+  width: 1vw;
+  position: fixed;
+  top: 0.5vh;
+  z-index: 2;
 }
-.cards{
-  
+.cards {
   border: solid white;
   border-radius: 0.1vw;
   background-color: rgb(36, 36, 36);
-  
 
   width: 12.5vw;
   height: 17.5vw;
@@ -83,127 +79,208 @@ z-index: 1;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.dards{
+.dards {
   width: fit-content;
 }
-.dards:hover{
+.dards:hover {
   height: 100%;
-transition-duration: 1000ms;
-  transform:translateY(-20vh);
-
-
+  transition-duration: 1000ms;
+  transform: translateY(-20vh);
 }
 
-.handd{
+.handd {
   position: absolute;
   bottom: -100vh;
   left: 27vw;
+  z-index: 2;
 }
-.handphone{
+.handphone {
   position: fixed;
 }
 
-.wholehand{
+.handphone,
+.phonehand1,
+.redmi,
+.git,
+.back,
+.link,
+.phonebg {
+  animation-name: move;
+  animation-duration: 5s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+.wholehand {
   position: absolute;
   bottom: 0;
 }
 
-.loading{
+.loading {
   width: 100dvw;
   height: 100dvh;
 }
-.pcard:hover{
-  animation: shut 10000  ;
-
+.pcard:hover {
+  animation: shut 10000;
 }
+@keyframes shi {
+  0% {
+    transform: translateX(-00vw);
+  }
+  5% {
+  }
+  95% {
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+@keyframes shi2 {
+  0% {
+    scale: 1;
+  }
+  5% {
+    scale: 0.8;
+  }
+  95% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
+}
+.sadness {
+  animation-name: shi;
 
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.sadness2 {
+  animation-name: shi;
+
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+.uselessclass1 {
+  transform: translateX(-100vw);
+}
+.uselessclass2 {
+}
+.main {
+  width: 200vw;
+  background-image: url("images/newbg.png");
+  background-size: fill;
+  background-repeat: repeat;
+  height: 100dvh;
+}
+.acko {
+  width: 100dvw;
+  height: 100dvh;
+  position: absolute;
+  left: 100dvw;
+  position: absolute;
+  background-size: fill;
+  background-repeat: repeat;
+}
 .parallelogram {
   box-shadow: 0 0 0;
-  z-index: 0;
   border: solid white;
-	width: 3vw;
-	height: 6vh;
-	transform: skew(30deg);
-	background: #641f1f;
+  width: 3vw;
+  height: 6vh;
+  transform: skew(30deg);
+  background: #641f1f;
   position: absolute;
-  top:69dvh;
+  top: 69dvh;
   left: 56dvw;
   font-size: x-large;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 1000;
-  z-index: 0;
+  z-index: 1;
 }
-.table{
+.table {
+  z-index: 1;
   box-shadow: 0 0 0;
   bottom: 0;
   position: absolute;
   width: 100dvw;
-  height:80dvh ;
+  height: 80dvh;
 }
 body {
   color: var(--foreground);
-  background-image: url('images/bg.png');
-  background-size: cover;
+
   font-family: Arial, Helvetica, sans-serif;
   overflow-y: visible;
 }
 
-
-
-
-.hand1{
-  z-index: 2;
+.hand1 {
+  z-index: 4;
   position: absolute;
   bottom: 0vh;
   left: 17.5vw;
   width: 30vw;
-  
 }
-.hand2{
-  z-index: 0;
+.hand2 {
+  z-index: 2;
   position: relative;
   bottom: 0vh;
   left: 17.69vw;
   width: 31vw;
 }
 
-.ricky{
+.ricky {
   position: absolute;
   bottom: 15vh;
   width: 25vw;
-  left:2vw;
-  z-index: -1;
-}
-
-.peter{
+  left: 2vw;
+  z-index: 0;
   animation-name: example;
-  animation-duration:6s;
-  animation-direction:alternate-reverse;
+  animation-duration: 6s;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
 }
-.hand1,.hand2,.cards{
+
+.peter,
+.ricky {
+  animation-name: example;
+  animation-duration: 6s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+}
+.hand1,
+.hand2,
+.cards {
   animation-name: move;
-  animation-duration:5s;
-  animation-direction:alternate-reverse;
-  animation-iteration-count: infinite; 
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 @keyframes move {
-  from{transform: translateX(0);}
-  
-  to{transform: translateX(0.5vw)}
- }
- 
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(0.5vw);
+  }
+}
+
 @keyframes example {
- from{transform: scale(1,1);}
- 
- to{transform: scale(1.05,1)}
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.05, 1);
+  }
 }
 @keyframes shut {
-  
-  100%{transform: none}
- }
+  100% {
+    transform: none;
+  }
+}
 
 /* The element to apply the animation to 
 div {
@@ -217,130 +294,149 @@ div {
 
 */
 
-
-
-.phonehand1{
+.phonehand1 {
   z-index: 2;
 }
-.phonehand1,.phonehand2,.phone{
-
-width: 30vw;
-
+.phonehand1,
+.phonehand2,
+.phone {
+  width: 30vw;
 }
 
-.redmi{
+.redmi {
   position: absolute;
   -webkit-user-drag: none;
   width: 18vw;
   height: auto;
- 
 }
 
-.phone{
+.phone {
   z-index: 10;
-  transform: translate(11vw,-15vh);
+  transform: translate(11vw, -15vh);
   position: absolute;
 }
 
-.phonebg{
-
-overflow: clip;
-background-color: rgb(39, 37, 37);
-width: 16vw;
-height: 69.6vh;
-bottom:8vh;
-right:42vw;
-z-index: 2;
-position: relative;
-left: 25vh;
+.phonebg {
+  overflow: clip;
+  background-color: rgb(39, 37, 37);
+  width: 16vw;
+  height: 69.6vh;
+  bottom: 8vh;
+  right: 42vw;
+  z-index: 2;
+  position: relative;
+  left: 25vh;
 }
-.desc{
+.desc {
   padding-top: 2vh;
   font-size: medium;
   font-weight: bold;
 }
-.phweb{
+.phweb {
   max-height: fit-content;
-padding-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
-.inside{
+.inside {
   max-height: 10%;
   padding: 1vw;
 }
-.down{
-   animation-name:shitanimation;
+.down {
+  z-index: 2;
+  animation-name: shitanimation;
   animation-duration: 1000ms;
   animation-iteration-count: 1;
-  animation-direction:alternate-reverse;
+  animation-direction: alternate-reverse;
   animation-fill-mode: forwards;
 }
 
 @keyframes shitanimation {
-  from {transform:translate(0,60vh);}
-  to {transform:none;}
+  from {
+    transform: translate(0, 60vh);
+  }
+  to {
+    transform: none;
+  }
 }
 @keyframes shut {
-  from {bottom:-100vh;}
-  to {bottom:00vh;}
+  from {
+    bottom: -100vh;
+  }
+  to {
+    bottom: 00vh;
+  }
 }
-.up{
-  animation-name:shut;
+.up {
+  animation-name: shut;
   animation-duration: 2000ms;
   animation-iteration-count: 1;
-  animation-direction:normal;
+  animation-direction: normal;
   animation-fill-mode: forwards;
 }
-.upp{
-  bottom:0vh
+.upp {
+  bottom: 0vh;
 }
-.downsynd{
-  animation-name:shut;
+.downsynd {
+  animation-name: shut;
   animation-duration: 1000ms;
   animation-iteration-count: 1;
-  animation-direction:reverse;
+  animation-direction: reverse;
   animation-fill-mode: forwards;
 }
-.titp{
-  padding-top:1vh;
+.titp {
+  padding-top: 1vh;
   position: sticky;
   font-size: larger;
   font-weight: bolder;
-  text-shadow: -1px 0 10px ;
+  text-shadow: -1px 0 10px;
   border-bottom: solid #b45656;
 }
-.back{
-  
- position: absolute;
- left: 5.5vh;
+.back {
+  position: absolute;
+  left: 5.5vh;
   z-index: 22;
- bottom: -74.5vh;
+  bottom: -74.5vh;
 }
-.git{
- 
- position: absolute;
-left: 16.5vh;
- z-index: 22;
-bottom: -74.5vh;
+.git {
+  position: absolute;
+  left: 16.5vh;
+  z-index: 22;
+  bottom: -74.5vh;
 }
-.link{
-
+.link {
   position: relative;
   bottom: -74.5vh;
-   z-index: 22;
-   left: 27vh;
+  z-index: 22;
+  left: 27vh;
 }
 
-.git:hover{
+.git:hover {
   filter: saturate(10.5);
-  
 }
-.link:hover{
-filter: saturate(10.5)
-
+.link:hover {
+  filter: saturate(10.5);
 }
+.fireplace {
+  transform: skew(0deg);
+  filter: brightness(0.6);
 
+  position: absolute;
+  left: 35vw;
+  bottom: 21.5vh;
+  width: 28.4vw;
+}
+.bookcase {
+  display: none;
+  transform: skew(0deg);
+  filter: brightness(0.5);
 
+  position: absolute;
+  left: 21vw;
+  bottom: 40vh;
+  box-shadow: black -1px -20px 20px 14px;
+  scale: 0.5;
+  width: fit-content;
+}
 
 @layer utilities {
   .text-balance {
@@ -409,6 +505,6 @@ filter: saturate(10.5)
     @apply border-border;
   }
   body {
-    @apply  text-foreground;
+    @apply text-foreground;
   }
 }

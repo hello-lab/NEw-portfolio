@@ -1,41 +1,47 @@
 import Image from "next/image";
 
-const Card=({img,deg,height,lang,kyss,title,shrtdes,des,tit})=> {
- if(des){
-  console.log(des)
-  des("hola")
-  tit("good")}
-  return(
-    <div className="pcard" onClick={kyss} style={{transform:'rotate('+deg+')',bottom:height}}>
-    <div className="dards"  >
-    <a className="cards" >
-    <Image
-          className="language"
-          src={lang}
-          
-          
-          
-        />
-
-      <Image
-          className="crdimg"
-          src={img}
-          alt="img"
-          
-          
-        />
-      <div className="tit">{title}</div>
-      
-      <div className="des">This is a very good table. Infact the best ,trust me this is the best table you will ever find.{"\n"}
-      </div>
-        
-        <div className="des">Technologies: Wood,Nails{"\r"}
-          Github:{"\r\n"}
-        TRy it
-        
-         </div>
-
-      </a></div></div>
-      )
+const Card = ({ img, deg, height, lang, kyss, title, imeg, des, tit }) => {
+  if (des) {
+    console.log(des);
+    des("hola");
+    tit("good");
   }
-  export default Card
+  return (
+    <div
+      className="pcard"
+      onClick={kyss}
+      style={{ transform: "rotate(" + deg + ")", bottom: height }}
+    >
+      <div className="dards">
+        <a className="cards">
+          <Image
+            className="language"
+            src={`/images/${lang}.png`}
+            width={4000}
+            height={4000}
+            alt="lang"
+          />
+          <div className="tit">{title}</div>
+          <Image
+            className="crdimg"
+            src={`/images/${img}.png`}
+            width={4000}
+            height={4000}
+            alt="img"
+          />
+
+          <div className="des">
+            VEry unimportant description read the full desciption pls:).{"\n"}
+          </div>
+
+          <div className="des">
+            Technologies: A lot of hard work{"\n"}
+            Github:{"\r\n"}
+            TRy it
+          </div>
+        </a>
+      </div>
+    </div>
+  );
+};
+export default Card;
