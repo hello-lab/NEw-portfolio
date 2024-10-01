@@ -19,6 +19,13 @@ export const metadata = {
   description: "Created using nextjs",
 };
 
+export const generateViewport = () => {
+  return {
+    width: "device-width",
+    initialScale: 1,
+  };
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

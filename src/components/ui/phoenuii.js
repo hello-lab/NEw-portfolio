@@ -72,7 +72,7 @@ const Card = ({ img, tit, desc, git, link, x }) => {
         onMouseDown={handleMouseDown}
         style={{ cursor: isDragging ? "grabbing" : "grab" }}
       >
-        <div>
+         <div>
           <Link href={git} target="_blank">
             <div className="git">
               <Image src={gitg} width={35} />
@@ -97,7 +97,7 @@ const Card = ({ img, tit, desc, git, link, x }) => {
           draggable="false"
         />
       </div>
-      <div className="phonebg">
+      <div className="phonebg" >
         <div className="inside">
           <div
             className="phweb"

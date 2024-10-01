@@ -21,7 +21,7 @@
     "git": "https://github.com/hello-lab/process-monitoring-system",
     "link": "https://uno.niyogi.hackclub.app",
     "id": "process",
-    "lang": "nodejs"
+    "lang": "python"
   },
   {
     "des": "This website was made for St Xaviers' 3day Hackathon (secured 2nd postion), the topic was educational platform . Brainiac is an innovative educational platform offering expertly curated courses and personalized learning paths for learners of all ages. Designed for school and college students, as well as individuals seeking to enhance specific skills, Brainiac provides a comprehensive and engaging learning experience. Features include interactive content such as videos, quizzes, and simulations, live classes, adaptive learning algorithms, and community support through discussion forums and study groups. Brainiac also offers progress tracking, accredited certifications, and career services, making it a one-stop solution for effective and enjoyable learning.Brainiac has been developed as a full stack web application, which is completely responsive in order to make it accessible to all sectors of learners. It is powered by a robust and type-safe Django backend designed in the Python Programming Language which allows us to seamlessly integrate and organize our code base without going through the hassle of segregating web components. On the frontend, we have used TailwindCSS in order to deliver finesse in design",

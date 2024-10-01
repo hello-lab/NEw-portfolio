@@ -20,7 +20,7 @@ html {
 .peter {
   z-index: 1;
   width: 34.5dvw;
-  top: 23dvh;
+  bottom: 33dvh;
   position: absolute;
   left: 40vw;
 }
@@ -52,6 +52,92 @@ html {
   left: 35vw;
   z-index: 3;
 }
+
+@media (max-width: 760px) {
+.table{
+  width: 120dvw;
+  scale: 1.5;
+}
+.ricky{
+  display: none;
+}
+.peter{
+  bottom:20vh;
+  width:100dvw;
+  left: 0;
+}
+.hand1,.hand2,.hand3{
+  scale: 3.5;
+  
+}
+html{
+  overflow: clip;
+}
+
+.pcard{
+  scale:4.5;
+  left:75vw;
+ 
+}
+.cards{
+  padding: 2px;
+}
+.tit,.des,.crdimg{
+  font-size: 5px;
+  
+}
+.tit{
+  left: 2;
+  position: relative;
+  padding: 2.5px;
+}
+.des{
+  overflow: hidden;
+}
+.dards:hover{
+transform: none;
+}
+
+.redmi{
+  width: 100vw;
+  z-index: 5;
+  scale: 5.9;
+  position: static;
+  top: 44vh;
+  transform: none;
+  
+}
+.handphone{
+  scale:6;
+  left: 0;
+  
+}
+.phweb{
+  width: 100%;
+  left: 0;
+   padding: 5;
+  padding-top: 15px;
+  min-height: 100%;
+ 
+}
+.inside{
+  height: 100%;
+}
+.phonebg{
+  min-width: 93dvw;
+  min-height: 90vh;
+  translate: -79.5vw 0;
+  right: auto;
+}
+.git,.back,.link{
+translate:-25vw 25vh;
+
+
+}
+
+}
+
+
 .chips {
   position: absolute;
   z-index: 1;
@@ -74,7 +160,7 @@ html {
 
   width: 12.5vw;
   height: 17.5vw;
-  padding: 1vh;
+  padding:0.3vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -206,7 +292,7 @@ html {
   bottom: 0;
   position: absolute;
   width: 100dvw;
-  height: 80dvh;
+  height: 40dvh;
 }
 body {
   color: var(--foreground);
@@ -220,7 +306,7 @@ body {
   position: absolute;
   bottom: 0vh;
   left: 17.5vw;
-  width: 30vw;
+  width: 28vw;
 }
 .hand2 {
   z-index: 2;
@@ -321,7 +407,7 @@ div {
   background-color: rgb(39, 37, 37);
   width: 16vw;
   height: 69.6vh;
-  bottom: 8vh;
+  bottom: 12vh;
   right: 42vw;
   z-index: 2;
   position: relative;
@@ -404,7 +490,7 @@ div {
   bottom: -74.5vh;
 }
 .link {
-  position: relative;
+  position: absolute;
   bottom: -74.5vh;
   z-index: 22;
   left: 27vh;
@@ -436,75 +522,4 @@ div {
   box-shadow: black -1px -20px 20px 14px;
   scale: 0.5;
   width: fit-content;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14.3% 4.1%;
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-    --primary: 24 9.8% 10%;
-    --primary-foreground: 60 9.1% 97.8%;
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-  }
-  .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 60 9.1% 97.8%;
-    --card: 20 14.3% 4.1%;
-    --card-foreground: 60 9.1% 97.8%;
-    --popover: 20 14.3% 4.1%;
-    --popover-foreground: 60 9.1% 97.8%;
-    --primary: 60 9.1% 97.8%;
-    --primary-foreground: 24 9.8% 10%;
-    --secondary: 12 6.5% 15.1%;
-    --secondary-foreground: 60 9.1% 97.8%;
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
-    --accent: 12 6.5% 15.1%;
-    --accent-foreground: 60 9.1% 97.8%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 12 6.5% 15.1%;
-    --input: 12 6.5% 15.1%;
-    --ring: 24 5.7% 82.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply text-foreground;
-  }
 }
