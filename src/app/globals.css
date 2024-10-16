@@ -56,13 +56,13 @@ html {
 @media (max-width: 760px) {
 .table{
   width: 120dvw;
-  scale: 1.5;
+  scale: 2.5 1.5;
 }
 .ricky{
   display: none;
 }
 .peter{
-  bottom:20vh;
+  bottom:45vh;
   width:100dvw;
   left: 0;
 }
@@ -101,7 +101,7 @@ transform: none;
 .redmi{
   width: 100vw;
   z-index: 5;
-  scale: 5.9;
+  scale: 1.9;
   position: static;
   top: 44vh;
   transform: none;
@@ -140,7 +140,7 @@ translate:-25vw 25vh;
 
 .chips {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   left: 55vw;
   bottom: 5vh;
 }
@@ -272,7 +272,7 @@ translate:-25vw 25vh;
 .parallelogram {
   box-shadow: 0 0 0;
   border: solid white;
-  width: 3vw;
+  width: 6vh;
   height: 6vh;
   transform: skew(30deg);
   background: #641f1f;
@@ -381,7 +381,10 @@ div {
 */
 
 .phonehand1 {
-  z-index: 2;
+  z-index: 20;
+  position: relative;
+
+  bottom: -68vh;
 }
 .phonehand1,
 .phonehand2,
@@ -390,28 +393,29 @@ div {
 }
 
 .redmi {
-  position: absolute;
+  z-index: 3;
   -webkit-user-drag: none;
-  width: 18vw;
-  height: auto;
+  height: 77vh;
+  width: 16vw;
+  position: relative;
+
 }
 
 .phone {
   z-index: 10;
   transform: translate(11vw, -15vh);
-  position: absolute;
+ 
 }
 
 .phonebg {
   overflow: clip;
   background-color: rgb(39, 37, 37);
-  width: 16vw;
+  width: 14.2vw;
   height: 69.6vh;
-  bottom: 12vh;
-  right: 42vw;
+  bottom: -75.5vh;
   z-index: 2;
   position: relative;
-  left: 25vh;
+  left: 1vw;
 }
 .desc {
   padding-top: 2vh;
@@ -460,7 +464,7 @@ div {
   animation-fill-mode: forwards;
 }
 .upp {
-  bottom: 0vh;
+  bottom: -0;
 }
 .downsynd {
   animation-name: shut;
@@ -477,25 +481,18 @@ div {
   text-shadow: -1px 0 10px;
   border-bottom: solid #b45656;
 }
-.back {
-  position: absolute;
-  left: 5.5vh;
+.navb{
+  position: relative;
+  display: flex;
+  width: 16vw;
   z-index: 22;
-  bottom: -74.5vh;
+  bottom: -75vh;
+  justify-content: space-around;
+padding: 3px;
 }
-.git {
-  position: absolute;
-  left: 16.5vh;
-  z-index: 22;
-  bottom: -74.5vh;
+.git,.link,.back{
+  height: 2vh;
 }
-.link {
-  position: absolute;
-  bottom: -74.5vh;
-  z-index: 22;
-  left: 27vh;
-}
-
 .git:hover {
   filter: saturate(10.5);
 }

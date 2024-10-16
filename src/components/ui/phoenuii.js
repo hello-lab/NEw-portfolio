@@ -72,32 +72,7 @@ const Card = ({ img, tit, desc, git, link, x }) => {
         onMouseDown={handleMouseDown}
         style={{ cursor: isDragging ? "grabbing" : "grab" }}
       >
-         <div>
-          <Link href={git} target="_blank">
-            <div className="git">
-              <Image src={gitg} width={35} />
-            </div>
-          </Link>
-
-          <Link target="_blank" href={link}>
-            <div className="link">
-              <Image src={hyper} width={32} />
-            </div>
-          </Link>
-          <div className="back" onClick={x}>
-            <Image src={back} width={35} />
-          </div>
-        </div>
-        <Image
-          className="redmi"
-          src={redmi}
-          alt="phone
-        
-      "
-          draggable="false"
-        />
-      </div>
-      <div className="phonebg" >
+         <div className="phonebg" >
         <div className="inside">
           <div
             className="phweb"
@@ -121,6 +96,32 @@ const Card = ({ img, tit, desc, git, link, x }) => {
           </div>
         </div>
       </div>
+         <div className="navb">
+          <Link href={git} target="_blank">
+            <div className="git">
+              <Image src={gitg} width={30} />
+            </div>
+          </Link>
+
+          <Link target="_blank" href={link}>
+            <div className="link">
+              <Image src={hyper} width={27} />
+            </div>
+          </Link>
+          <div className="back" onClick={x}>
+            <Image src={back} width={30} />
+          </div>
+        </div>
+        <Image
+          className="redmi"
+          src={redmi}
+          alt="phone
+        
+      "
+          draggable="false"
+        />
+      </div>
+     
     </div>
   );
 };
