@@ -25,32 +25,8 @@ A personal portfolio website built with **Next.js** — showcasing my projects, 
 
 ---
 
-## 🚀 Getting Started  
 
-### 1️⃣ Clone the repository  
 
-```bash
-git clone https://github.com/your-username/portfolio-nextjs.git
-cd portfolio-nextjs
-````
-
-### 2️⃣ Install dependencies
-
-```bash
-npm install
-# or
-yarn install
-```
-
-### 3️⃣ Run the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
-
---
 
 ## 📌 Screenshots
 ### Home
